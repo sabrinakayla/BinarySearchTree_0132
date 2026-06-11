@@ -23,7 +23,7 @@ class BinaryTree
 public:
     Node *ROOT;
 
-    Binary Tree()
+    BinaryTree()
     {
         ROOT = NULL; // Initializing ROOT to null
     }
@@ -41,5 +41,11 @@ public:
         Node *currentNode = NULL;
 
         search(element, parent, currentNode);
+
+         if (parent == NULL)
+        {
+            ROOT = newNode;
+            return;
+        }
     }
 }
