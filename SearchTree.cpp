@@ -92,11 +92,18 @@ public:
             inorder(ptr->rightchild);
         }
 
-        void preorder(Node *ptr)
+    void preorder(Node *ptr)
+    {
+        if (ROOT == NULL)
         {
-            if (ROOT == NULL)
-            {
-                cout <<"Tree is empty"
-            }
+            cout <<"Tree is empty"
+        }
+
+        if (ptr != NULL)
+        {
+            cout << ptr->info << " ";
+            preorder(ptr->leftchild);
+            preorder(ptr->rightchild);
         }
     }
+}
