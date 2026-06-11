@@ -22,4 +22,9 @@ class BinaryTree
 {
 public:
     Node *ROOT;
+
+    Binary Tree()
+    {
+        ROOT = NULL; // Initializing ROOT to null
+    }
 }
